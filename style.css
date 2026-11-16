@@ -1,0 +1,28 @@
+body {
+    --bs-primary-base: #71384b;
+    --bs-primary-fg: #71384b;
+    --bs-primary-fg-emphasis: #542638;
+    --bs-primary-bg: #71384b;
+    --bs-primary-bg-subtle: #f8dce5;
+    --bs-primary-bg-muted: #fceef2;
+    --bs-primary-border: #b77b8e;
+    --bs-primary-focus-ring: #b77b8e;
+    --bs-primary-contrast: #ffffff;
+    --bs-bg-body: #fff8e8;
+    --bs-bg-1: #fffdf7;
+    --bs-fg-body: #303030;
+    background-color: #fff8e8;
+    color: #303030;
+}
+h1, h2, h3, h4, .navbar-brand { color: #71384b; }
+a { color: #71384b; }
+.btn-solid.theme-primary {
+    --bs-btn-bg: #71384b;
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #71384b;
+}
+.btn-solid.theme-primary:hover {
+    --bs-btn-hover-bg: #542638;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-border-color: #542638;
+}
