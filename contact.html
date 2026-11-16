@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Biki's Baking Club</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <a class="visually-hidden-focusable" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header>
+        <nav class="navbar md:navbar-expand bg-1"
+             aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    Baking Club
+                </a>
+
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <dialog class="drawer drawer-end" id="navigation" tabindex="-1" aria-labelledby="navigation-title">
+                    <div class="drawer-header">
+                        <p class="drawer-title" id="navigation-title">
+                            Baking Club
+                        </p>
+                        <button class="btn-close" type="button" data-bs-dismiss="drawer" aria-label="Close navigation"></button>
+                    </div>
+
+                    <div class="drawer-body">
+                        <ul class="nav navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#workshops">Workshops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5" id="main-content">
+        <h1>Contact Biki's Baking Club</h1>
+        <p class="lead">Interested in a baking workshop? Tell us what you would like to learn.
+        </p>
+        <p class="mb-4" id="form-note">All fields are required. This is a demonstration form. Your information will not be sent or stored.</p>
+
+        <form class="bg-1 border rounded-3 p-4" aria-describedby="form-note" onsubmit="event.preventDefault(); document.getElementById('form-status').hidden = false;">
+
+            <div class="row g-4">
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="first-name">First Name</label>
+                        <input class="form-control" type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="last-name">Last Name</label>
+                        <input class="form-control" type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input class="form-control" type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="workshop">Choose a Workshop</label>
+                        <select class="form-control" id="workshop" name="workshop" required>
+                            <option value="" disabled selected>
+                                Select a workshop
+                            </option>
+                            <option value="cheesecake">
+                                Basque Cheesecake
+                            </option>
+                            <option value="swiss-roll">
+                                Cream Swiss Roll
+                            </option>
+                            <option value="cookies">
+                                Chocolate Chip Cookies
+                            </option>
+                            <option value="ricecake">
+                                Rice Cakes
+                            </option>
+                            <option value="bagel">
+                                Homemade Bagels
+                            </option>
+                            <option value="scones">
+                                Afternoon Tea Scones
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <input class="check" type="checkbox" id="consent" name="consent" required>
+                        <label for="consent"> I agree to be contacted about my baking workshop enquiry.</label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn-solid theme-primary" type="submit">
+                        Submit Enquiry
+                    </button>
+                </div>
+            </div>
+
+            <p class="mt-4 mb-0" id="form-status" role="status" hidden>
+                Your form passed validation. This is a demonstration,
+                so your enquiry has not been sent or stored.
+            </p>
+        </form>
+    </main>
+
+    <footer class="bg-1 border-top py-4">
+        <div class="container text-center">
+            <p class="fw-bold">Biki's Baking Club</p>
+            <p>Learn together. Bake together. Share the results.</p>
+            <a href="contact.html">Contact the Club</a>
+            <p class="mt-3 mb-0">
+                &copy; 2026 Ziqi Lin. CCT 360 student project.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
