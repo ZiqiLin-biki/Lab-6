@@ -6,31 +6,34 @@
     <title>Baking Club</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="bootstrap.bundle.min.js"></script>
+    <script type="module" src="bootstrap.bundle.min.js"></script>
 </head>
 <body>
-   <a class="visual-hidden-focusable" href="#main-content">Skip to main content</a>
+   <a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
    <header>
-    <nav class="navbar md: navbar-expand bg-1" aria-label="Main navigation">
+    <nav class="navbar md:navbar-expand bg-1" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="index.html">Baking Club</a>
-            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navigation" aria-contols="navigation" aria-expanded="false" aria-label="Open navigation">
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation">
                 <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
-            <dialog class="drawer drawer-end" id="navigation" tabindex="-1" aria-labelledby="navigation-tittle">
+            <dialog class="drawer drawer-end" id="navigation" tabindex="-1" aria-labelledby="navigation-title">
                 <div class="drawer-header">
-                    <p class="drawer-tittle" id="navigation-title">Baking Club</p>
+                    <p class="drawer-title" id="navigation-title">Baking Club</p>
                     <button class="btn-close" type="button" data-bs-dismiss="drawer" aria-label="Close navigation"></button>
                 </div>
-                <div class="frawer-body">
+                <div class="drawer-body">
                     <ul class="nav navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html" aria-current="page">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#workshops">Workshops</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-                    </ul>
+                     </ul>
                 </div>
             </dialog>
         </div>
@@ -51,7 +54,7 @@
                 <div class="carousel-inner rounded-3">
 
                 <div class="carousel-item active">
-                    <img class="d-block w-100 img-fluid" src="images/cheesecake.jpg" alt="Basque cheesecake">
+                    <img class="d-block w-100 img-fluid" src="images/cheesecake.jpeg" alt="Basque cheesecake">
                         <div class="bg-1 p-4">
                             <h2>Start with a Basque Cheesecake</h2>
                             <p class="mb-0"> Explore a simple recipe with a caramelized top and a soft, creamy centre. </p>
@@ -100,7 +103,7 @@
             <div class="row g-4">
             <div class="col-12 md:col-6 lg:col-4">
                     <article class="card h-100">
-                        <img class="card-img-top img-fluid" src="images/cheesecake.jpg" alt="Basque cheesecake">
+                        <img class="card-img-top img-fluid" src="images/cheesecake.jpeg" alt="Basque cheesecake">
                           <div class="card-body">
                             <h3 class="card-title">Basque Cheesecake</h3>
                             <p class="card-text">Make a creamy cheesecake with a deeply browned top and a soft centre.</p>
@@ -189,7 +192,7 @@
 
                         <div class="card-body">
                             <h3 class="card-title">Chocolate Chip Cookies</h3>
-                            <p class="card-text">Bake a batch of cookies with crisp edgesand a soft chocolate-filled centre.</p>
+                            <p class="card-text">Bake a batch of cookies with crisp edges and a soft chocolate-filled centre.</p>
 
                             <div class="accordion mb-3">
                                 <details class="accordion-item">
@@ -230,7 +233,7 @@
 
         <div class="col-12 md:col-6 lg:col-4"> 
           <article class="card h-100">
-            <img class="card-img-top img-fluid"src="images/ricecake.jpeg" alt="Rice cakes prepared for the baking club workshop">
+            <img class="card-img-top img-fluid" src="images/ricecake.jpeg" alt="Rice cakes prepared for the baking club workshop">
 
         <div class="card-body">
             <h3 class="card-title">Rice Cakes</h3>
@@ -241,7 +244,7 @@
                     <summary class="accordion-header">
                         Details
                     </summary>
-                    <div class="accordion-body"> Practise measuring rice flour, mixing the dough and shaping evenly sized rice cakes.Explore how moisture affects their texture.</div>
+                    <div class="accordion-body"> Practise measuring rice flour, mixing the dough and shaping evenly sized rice cakes. Explore how moisture affects their texture.</div>
                 </details>
             </div>
 
@@ -318,9 +321,54 @@
         </div>
     </article>
 </div> 
-</div>
-</section>
-</main>
+           <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img class="card-img-top img-fluid" src="images/scones.jpg"alt="Golden scones served with jam">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Afternoon Tea Scones</h3>
+                            <p class="card-text"> Make buttery scones to enjoy with jam and a warm cup of tea.
+                            </p>
+
+                            <div class="accordion mb-3">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">
+                                        Details
+                                    </summary>
+                                    <div class="accordion-body"> Learn to work cold butter into flour and handle the dough gently for a tender texture.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button class="btn-solid theme-primary" type="button" data-bs-toggle="dialog" data-bs-target="#scones-dialog">
+                                Workshop Information
+                            </button>
+
+                            <dialog class="dialog" id="scones-dialog" aria-labelledby="scones-title">
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title" id="scones-title">
+                                        Afternoon Tea Scone Workshop
+                                    </h4>
+                                    <button class="btn-close" type="button" data-bs-dismiss="dialog" aria-label="Close"></button>
+                                </div>
+                                <div class="dialog-body">
+                                    <p>Practise shaping and cutting scones while exploring how cold ingredients and gentle mixing affect texture. </p>
+                                    <p>Key ingredients include wheat and dairy.</p>
+                                    <a href="contact.html"> Ask about this workshop </a>
+                                </div>
+                                <div class="dialog-footer">
+                                    <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
          <footer class="bg-1 border-top py-4">
         <div class="container text-center">
             <p class="fw-bold">Biki's Baking Club</p>
@@ -328,6 +376,7 @@
             <a href="contact.html">Contact the Club</a>
             <p class="mt-3 mb-0">&copy; 2026 Ziqi Lin. CCT 360 student project.</p>     
         </div>
+    </footer>
 
 </body>
 </html>
